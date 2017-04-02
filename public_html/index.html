@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+          <link href="storage101.css" rel="stylesheet">
+          <link rel="stylesheet" href="bootstrap.min.css">
+          <script src="jquery.min.js"></script>
+          <script src="bootstrap.min.js"></script>
+          <script type="text/javascript" src="jquery-ui.js"></script>
+    </head>
+    
+    
+   <body>
+
+   <div class="background-shelf">
+      <div id="front" onclick="style.display = 'none'" data-target="#main">
+          <p id="intro-bucket"></p>
+          <p id="play" class="btn" data-toggle="collapse" data-target="#main"></p>
+       </div>
+       <div id="main" class="collapse droppable">
+            <div id="help" class="btn" data-toggle="collapse" data-target="#hc"></div>
+            <div id="bleach" class="draggable"></div>
+            <div id="gb" class="draggable"></div>
+            <div id="apc" class="draggable"></div>
+            <div id="broom" class="draggable"></div>
+            <div id="brush" class="draggable"></div>
+            <div id="bs" class="draggable"></div>
+            <div id="bucket" class="draggable"></div>
+            <div id="colths" class="draggable"></div>
+            <div id="dp" class="draggable"></div>
+            <div id="duster" class="draggable"></div>
+            <div id="gloves" class="draggable"></div>
+            <div id="ld" class="draggable"></div>
+            <div id="mop" class="draggable"></div>
+            <div id="pt" class="draggable"></div>
+            <div id="soap" class="draggable"></div>
+            <div id="sponges" class="draggable"></div>
+            <div id="tb" class="draggable"></div>
+            <div id="vacuum" class="draggable"></div>
+       </div>
+      <div class="droppable-container">
+        
+      </div>
+      <div id="hc" class="collapse">
+           <div id="help-colths"></div>
+           <div id="help-bleach"></div>
+           <div id="help-pt"></div>
+           <div id="line"></div>
+           <div id="game-play-box">
+              <div id="game-play">Game Play</div>
+              <div id="game-play-text"></div>
+           </div>
+           <div id="close" class="btn" data-toggle="collapse" data-target="#hc"></div>
+           <div id="drag-shelve">Drag from box to shelves</div>
+           <div id="supply-closet"> In Supply Closet</div>
+           <div id="under-sink"> Under the Sink</div>
+      </div>
+   </div>
+   <script type="text/javascript">
+  $( function() {
+    $( ".draggable" ).draggable({
+      containment: "document",
+      revert: "invalid"
+    });
+    $( ".droppable" ).droppable({
+      drop: function( event, ui ) {
+        $( this )
+          .addClass( "ui-state-highlight" )
+          .find( "p" )
+            .html( "Dropped!" );
+      }
+    });
+  } );     
+
+   </script>
+       
+     </body>
+</html>

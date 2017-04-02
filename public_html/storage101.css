@@ -1,0 +1,345 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 1, 2017, 8:53:02 PM
+    Author     : Nishant
+*/
+
+
+/*body{
+    width: 40px;
+    height: 40px;
+    size: 450px 400px;
+    padding: 1px;
+    background-image: url("img/4-1-1-Background.png") ;
+    background-size: 800px 400px;
+    background-repeat: no-repeat;
+    }*/
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.background-shelf{
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url("img/4-1-1-Background.png") ;
+    background-size: 800px 400px;
+    background-repeat: no-repeat;
+}
+    
+.rotated-image {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+    
+#intro-bucket{
+    position: absolute;
+    top: 60px;
+    left: 220px;
+    content: url("img/4-1-1-Intro Bucket.png") ;
+    height: 300px;
+    width: 360px;
+        }
+    
+#play{
+    position: absolute;
+    top: 165px;
+    left: 350px;
+    content: url("img/4-1-1-Play-Button.png") ;
+    height: 40px;
+    width: 100px;
+        }
+
+#main{
+    position: relative;
+    top: 280px;
+    left: 390px;
+    background-image: url("img/4-1-1-Drawer.png") ;
+    height: 120px;
+    width: 410px;
+    padding: 1px;
+}
+#drw{
+        }
+       
+#help{
+    position: absolute;
+    top: 365px;
+    left: 765px;
+    top: 85px;
+    left: 375px;
+    content: url("img/4-1-1-Help-icon.png") ;
+    height: 30px;
+    width: 30px;
+    padding: 1px;
+        }
+        
+#hc{
+    color: white;
+    position: absolute;
+    background-image: url("img/4-1-1-help-overlay.png") ;
+    height: 400px;
+    width: 800px;
+    top: 0px;
+        }
+        
+#supply-closet{
+    position: absolute;
+    top: 55px;
+    right: 450px;
+    width: 200px;
+        }
+        
+#under-sink{
+    position: absolute;
+    top: 55px;
+    right: 100px;
+    width: 200px;
+        }
+        
+#game-play{
+    position: absolute;
+    top: 5px;
+    width: 100%;
+        }
+        
+#drag-shelve{
+    position: absolute;
+    top: 200px;
+    right: 140px;
+    width: 200px;
+        }
+        
+#line{
+    position: absolute;
+    top: 220px;
+    right: 150px;
+    content: url("img/4-1-1-help-line1.png") ;
+    height: 50px;
+    width: 100px;
+        }
+        
+#help-bleach{
+    position: absolute;
+    top: 110px;
+    left: 650px;
+    content: url("img/4-1-1-bleach.png") ;
+    height: 60px;
+    width: 28px;
+        }
+        
+#help-colths{
+     position: absolute;
+    top: 130px;
+    left: 520px;
+    content: url("img/4-1-1-cloths.png") ;
+    height: 40px;
+    width: 40px;
+        }
+      
+#game-play-box{
+    position: absolute;
+    bottom: 0px;
+    left: 290px;
+    background-image: url("img/4-1-1-help-game-play-box.png") ;
+    background-size: 250px 98px;
+    height: 98px;
+    width: 250px;
+        }
+        
+#game-play-text{
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    content: url("img/4-1-1-help-game-play-text.png") ;
+    height: 70px;
+    width: 235px;
+        }    
+        
+#close{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    content: url("img/4-1-1-help-close-icon.png") ;
+    height: 30px;
+    width: 30px;
+    padding: 1px;
+        } 
+        
+#help-pt{
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    content: url("img/4-1-1-paper-towel.png") ;
+    height: 60px;
+    width: 40px;
+        }
+        
+#brush{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    content: url("img/4-1-1-brush.png") ;
+    height: 20px;
+    width: 30px;
+        }
+
+#gloves{
+    position: absolute;
+    top: 10px;
+    left: 45px;
+    content: url("img/4-1-1-Gloves.png") ;
+    height: 35px;
+    width: 40px;
+        }
+
+#dp{
+    position: absolute;
+    top: 10px;
+    left: 92px;
+    content: url("img/4-1-1-dust-pan.png") ;
+    height: 28px;
+    width: 30px;
+        }
+
+#mop{
+    position: absolute;
+    top: 15px;
+    left: 310px;
+    content: url("img/4-1-1-Mop.png") ;
+    height: 100px;
+    width: 60px;
+        }
+        
+#vacuum{
+    position: absolute;
+    top: 45px;
+    left: 5px;
+    content: url("img/4-1-1-Vacuum.png") ;
+    height: 70px;
+    width: 80px;
+        }
+        
+#apc{
+    position: absolute;
+    top: 10px;
+    left: 213px;
+    content: url("img/4-1-1-all-purpose-cleaner.png") ;
+    height: 60px;
+    width: 30px;
+        }
+        
+#bs{
+    position: absolute;
+    top: 50px;
+    left: 135px;
+    content: url("img/4-1-1-baking-soda.png") ;
+    height: 50px;
+    width: 20px;
+        }
+        
+#bleach{
+    position: absolute;
+    top: 10px;
+    left: 250px;
+    content: url("img/4-1-1-bleach.png") ;
+    height: 60px;
+    width: 28px;
+        }
+        
+#broom{
+    position: absolute;
+    top: 10px;
+    left: 180px;
+    content: url("img/4-1-1-broom.png") ;
+    height: 105px;
+    width: 55px;
+        }
+        
+        
+#colths{
+    position: absolute;
+    top: 10px;
+    left: 290px;
+    content: url("img/4-1-1-cloths.png") ;
+    height: 30px;
+    width: 30px;
+        }
+              
+#bucket{
+    position: absolute;
+    top: 45px;
+    left: 85px;
+    content: url("img/4-1-1-bucket.png") ;
+    height: 45px;
+    width: 45px;
+        }
+        
+#duster{
+    position: absolute;
+    top: 95px;
+    left: 84px;
+    content: url("img/4-1-1-duster.png") ;
+    height: 20px;
+    width: 55px;
+        }
+        
+#ld{
+    position: absolute;
+    top: 10px;
+    left: 360px;
+    content: url("img/4-1-1-laundry-detergent.png") ;
+    height: 60px;
+    width: 40px;
+        }
+        
+#pt{
+    position: absolute;
+    top: 45px;
+    left: 285px;
+    content: url("img/4-1-1-paper-towel.png") ;
+    height: 50px;
+    width: 30px;
+        }
+        
+#soap{
+    position: absolute;
+    top: 60px;
+    left: 160px;
+    content: url("img/4-1-1-soap.png") ;
+    height: 55px;
+    width: 15px;
+        }
+        
+#sponges{
+    position: absolute;
+    top: 75px;
+    left: 240px;
+    content: url("img/4-1-1-sponges.png") ;
+    height: 40px;
+    width: 35px;
+        }      
+        
+#tb{
+    position: absolute;
+    top: 10px;
+    left: 132px;
+    content: url("img/4-1-1-toilet-brush.png") ;
+    height: 38px;
+    width: 25px;
+        }
+        
+#gb{
+    position: absolute;
+    top: 10px;
+    left: 165px;
+    content: url("img/4-1-1-garbage-bags.png") ;
+    height: 35px;
+    width: 35px;
+        } 
